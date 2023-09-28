@@ -1,0 +1,9 @@
+first_level_property: first level value
+second:
+  level_property: second level value
+third:
+  level:
+    array:
+      - third
+      - level
+      - value

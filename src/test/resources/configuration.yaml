@@ -1,0 +1,10 @@
+kafka:
+  application_id: lime
+  force_unique_application_id: true
+  url: localhost:29092
+  state_dir: target/kafka/state
+  topics:
+    - raw_logs
+    - message_status_logs
+    - message_queue_count_metric
+    - message_processing_time_metric
