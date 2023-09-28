@@ -1,4 +1,4 @@
-package com.backhouselabs.lime.configuration;
+package com.luckstro.lime.configuration;
 
 import org.yaml.snakeyaml.Yaml;
 

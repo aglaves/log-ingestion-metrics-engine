@@ -1,6 +1,6 @@
-package com.backhouselabs.lime.kafka;
+package com.luckstro.lime.kafka;
 
-import com.backhouselabs.lime.configuration.Configuration;
+import com.luckstro.lime.configuration.Configuration;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.StreamsConfig;
 

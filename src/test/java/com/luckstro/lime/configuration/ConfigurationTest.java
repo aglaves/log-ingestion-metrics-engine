@@ -1,4 +1,4 @@
-package com.backhouselabs.lime.configuration;
+package com.luckstro.lime.configuration;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
