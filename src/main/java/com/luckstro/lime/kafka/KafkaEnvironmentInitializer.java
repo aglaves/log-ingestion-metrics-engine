@@ -12,7 +12,7 @@ import java.util.concurrent.ExecutionException;
 
 public class KafkaEnvironmentInitializer {
     public void initializeKafkaEnvironment() {
-        try (AdminClient admin = AdminClient.create(new KafkaConfiguration().configuration())) {
+        try (AdminClient admin = AdminClient.create(new KafkaConfiguration().kafkaConfiguration())) {
             ensureTopicsCreated(admin);
         } catch (ExecutionException e) {
             throw new RuntimeException(e);

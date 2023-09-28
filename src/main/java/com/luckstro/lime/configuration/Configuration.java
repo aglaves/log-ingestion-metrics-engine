@@ -50,7 +50,6 @@ public class Configuration {
             } else if (v instanceof List)
                 loadArrayOfStrings(k, (List) v, base + k);
             else {
-                System.out.println("key: " + base + k + " value: " + v);
                 configuration.put(base + k, v);
             }
         });

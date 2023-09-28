@@ -1,11 +1,11 @@
 package com.luckstro.lime;
 
-import com.luckstro.lime.configuration.Configuration;
+import com.luckstro.lime.configuration.Environment;
 import com.luckstro.lime.kafka.KafkaEnvironmentInitializer;
 
 public class Bootstrap {
     public static void main(String args[]) {
-        Configuration configuration = new Configuration();
+        Environment.initialize();
         new KafkaEnvironmentInitializer().initializeKafkaEnvironment();
     }
 }
