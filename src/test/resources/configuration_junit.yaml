@@ -7,3 +7,9 @@ third:
       - third
       - level
       - value
+    list:
+      - same
+      - as
+      - array
+short_property: 1
+integer_property: 100

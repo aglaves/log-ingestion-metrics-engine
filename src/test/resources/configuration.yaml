@@ -4,7 +4,7 @@ kafka:
   url: localhost:29092
   state_dir: target/kafka/state
   topics:
-    - raw_logs
-    - message_status_logs
-    - message_queue_count_metric
-    - message_processing_time_metric
+    - unit_test_topic
+    - unit_test_topic2
+  topic_partitions: 5
+  topic_replication_factor: 1
