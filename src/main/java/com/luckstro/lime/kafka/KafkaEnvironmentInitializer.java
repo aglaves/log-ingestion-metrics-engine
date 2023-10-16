@@ -29,16 +29,6 @@ public class KafkaEnvironmentInitializer {
             createTopic(admin, topicToCreate,
                     configuration.getConfigurationInteger("kafka.topic_partitions"),
                     configuration.getConfigurationShort("kafka.topic_replication_factor"));
-//      boolean contains = names.contains("TEST_6");
-//            if (!contains) {
-//                List<NewTopic> topicList = new ArrayList<NewTopic>();
-//                Map<String, String> configs = new HashMap<String, String>();
-//                int partitions = 5;
-//                Short replication = 1;
-//                NewTopic newTopic = new NewTopic("TEST_6", partitions, replication).configs(configs);
-//                topicList.add(newTopic);
-//                admin.createTopics(topicList);
-//            }
     }
 
     private List<String> createListOfTopicsToCreate(Set<String> currentTopicNames, List<String> expectedTopics) {
