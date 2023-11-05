@@ -43,4 +43,11 @@ public class ConfigurationTest {
         Assertions.assertEquals("as", configuration.getConfigurationList("third.level.list").get(1));
         Assertions.assertEquals("array", configuration.getConfigurationList("third.level.list").get(2));
     }
+
+    @Test
+    public void testSystemProperty() {
+        System.setProperty("JunitSystemStringProperty", "SystemPropertyValue");
+        Configuration configuration = new Configuration("configuration_junit.yaml");
+        Assertions.assertEquals("SystemPropertyValue", configuration.getConfigurationString("system_string_property"));
+    }
 }

@@ -13,3 +13,5 @@ third:
       - array
 short_property: 1
 integer_property: 100
+system_string_property: ${JunitSystemStringProperty}
+environment_string_property: ${JunitEnvironmentStringProperty}

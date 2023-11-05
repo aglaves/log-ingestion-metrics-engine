@@ -29,4 +29,5 @@ services:
       KAFKA_SSL_CLIENT_AUTH: 'required'
 
     volumes:
-      - ${LOCAL_SSL_PATH}:/etc/kafka/secrets
+      - ./ssl:/etc/kafka/secrets
+      - C:\personal\Lime\ssl4:/kafka-client-keys

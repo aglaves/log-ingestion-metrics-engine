@@ -1,10 +1,20 @@
 kafka:
   application_id: lime
   force_unique_application_id: true
-  url: localhost:29092
+  security:
+    key:
+      password: myClientStorePassword
+    keystore:
+      location: src\test\resources\client-ssl\kafka.client.keystore.jks
+      password: myClientStorePassword
+    protocol: SSL
+    truststore:
+      location: src\test\resources\client-ssl\kafka.client.truststore.jks
+      password: myTrustStorePassword
   state_dir: target/kafka/state
   topics:
     - unit_test_topic
     - unit_test_topic2
   topic_partitions: 5
   topic_replication_factor: 1
+  url: localhost:29093
